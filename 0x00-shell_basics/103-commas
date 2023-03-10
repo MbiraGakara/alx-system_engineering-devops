@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -1Ap | sed '$!s/$/,/;s/^[0-9A-Za-z]/& /' | sort -d -f -k1.1 | tr -d '\n'; echo
